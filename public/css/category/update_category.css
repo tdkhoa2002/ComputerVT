@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.container form {
+    background-color: #FFFFFF;
+    width: 800px;
+    height: 800px;
+    padding: 32px 40px;
+    margin-top: 0;
+    margin-bottom: 150px;
+}
+
+section.container form label {
+    width: 100px;
+    font-size: 18px;
+}
+
+section.container form div {
+    margin-bottom: 30px;
+}
+
+section.container form input {
+    outline: none;
+    padding: 10px;
+    width: 450px;
+    font-size: 16px;
+    color: rgba(85,85,85,.8);
+}

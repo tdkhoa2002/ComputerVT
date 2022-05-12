@@ -1,0 +1,16 @@
+span .fa, .fas {
+    font-size: 15px;
+    line-height: 50px;
+}
+div.pull-right .pagination li {
+    border: 1px solid blue;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+div.pull-right {
+    /* position: absolute;
+    bottom: -280px;
+    left: 35%;
+    text-align: center; */
+}

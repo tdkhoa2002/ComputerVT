@@ -1,0 +1,27 @@
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.table tbody tr td > img {
+    max-width: 44%;
+}
+.table thead tr th {
+    text-align: center;
+    padding: 20px 0;
+    border-right: 1px solid #f0f0f0;
+}
+.table tbody tr td {
+    text-align: center;
+    padding: 20px 0;
+    border-right: 1px solid #f0f0f0;
+}
+.col15 {
+    width: 15%;
+}
+tbody .quantity > input {
+    width: 65px;
+}
+tbody .item a {
+    color: #428bca;
+    text-decoration: none;
+}

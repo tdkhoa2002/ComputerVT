@@ -1,0 +1,24 @@
+moi san pham co 1 category => danh muc se la thuong hieu, trong tam gia trung binh, ...
+cac san pham trong tung danh muc con se duoc tong hop tu thong tin cua nhung san pham do, ...
+
+https://swiperjs.com/get-started
+aoi scroll
+
+moi san pham co them 1 cot category_homepage_id->nullable()
+category_homepage table co 2 filed la name va id 
+moi category_homepage -> paginate (5 or 10 articles)
+trong view:
+@foreach($categories_homepage as $category_homepage)
+h2: $category_homepage -> name
+@foreach($category_homepage->articles as $category_articles_homepage )
+div
+    span $category_articles_homepage->name
+    span gia
+    span url image
+
+làm categories_homepage va category
+
+Quan ly user -> block -> bla bla
+Gio hang Cart
+
+Product chua lam update + delete va show

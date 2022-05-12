@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1360px;
+}
+
+section.container form {
+    background-color: #FFFFFF;
+    width: 800px;
+    height: 800px;
+    padding: 32px 40px;
+    margin-top: 0;
+    margin-bottom: 150px;
+}
+
+section.container form > div {
+    margin-bottom: 30px;
+    display: flex;
+}
+section.container form div#description label {
+    float: left;
+}
+section.container form textarea {
+    height: 210px;
+    width: 450px;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    overflow-y: visible;
+    color: rgba(85,85,85,.8);
+    font-size: 14px;
+}
+section.container form label {
+    width: 150px;
+    font-size: 14px;
+}
+
+section.container form input {
+    width: 450px;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;  
+    color: rgba(85,85,85,.8);
+}
+section.container form div.container-button {
+    position: relative;
+    margin-top: 50px;
+}
+section.container form div.container-button button {
+    font-size: 14px;
+    min-width: 140px;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+section.container form button.cancel {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-right: 150px;
+}
+
+section.container form button.cancel:hover {
+    background-color: #F5F5F5;
+}
+

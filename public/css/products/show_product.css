@@ -1,0 +1,74 @@
+#list-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list-items .item {
+    position: relative;
+    width: 18%;
+    margin-right: 2%;
+    margin-top: 40px;
+    background-color: white;
+    padding: 0 15px;
+    padding-top: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+}
+#list-items .item:last-child {
+    margin-right: 0;
+}
+#list-items .item .image-products {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+#list-items .item .image-products img {
+    width: 100%;
+}
+#list-items .item .image-products .mask {
+    display: block;
+    background-color: rgba(121, 117, 101, 0.8);
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    transition: bottom 0.5s ease;
+    padding: 10px;
+}
+#list-items .item .image-products .mask div > a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#list-items .item:hover .image-products .mask {
+    bottom: 0;
+}
+
+.info-products {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.info-products .name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.info-products del {
+    color: #888;
+}
+.info-products .promotional-price {
+    font-size: 20px;
+    color: #ed0000;
+    font-weight: 700;
+}
+
+.info-products .item-icon {
+    position: absolute;
+    right: 15px;
+    bottom: 65px;
+}
+.info-products .item-icon >img {
+    width: 35px;
+    height: 35px;
+}

@@ -1,0 +1,18 @@
+.handle {
+    display: flex;
+}
+.handle form {
+    margin-right: 5px;
+}
+.col5 {
+    width: 5%;
+}
+.col15 {
+    width: 15%;
+}
+.col13 {
+    width: 13%;
+}
+.col10 {
+    width: 10%;
+}

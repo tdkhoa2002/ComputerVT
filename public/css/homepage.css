@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#row-space-around {
+    display: flex;
+    width: 100%;
+}
+#row-space-around > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+#thumbnail-row-under {
+    display: flex;
+    width: 100%;
+}
+#thumbnail-row-under img {
+    width: 100%;
+}
+#navbarDropdown {
+    margin-left: auto;
+}
+.dropdown-menu {
+    height: 100px !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+}
+section.container > div {
+    display: flex;
+    justify-content: baseline;
+}
+section.container div > div#demo {
+    width: calc(100%-200px);
+    height: 400px;
+}
+section.container div > div#demo .carousel-inner div img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+section.container div#contain-item {
+    position: relative;
+}
+section.container ul.item-scroll {
+    width: 200px;
+    min-height: 100%;
+    background-color: #ffffff;
+}
+section.container ul.item-scroll li.item {
+    display: list-item;
+    list-style: none;
+}
+section.container ul.item-scroll li.item a {
+    color: black;
+    font-size: 13px;
+    line-height: 30px;
+    text-decoration: none;
+    cursor:pointer;
+    display: flex;
+}
+section.container ul.item-scroll li.item a span {
+    padding: 4px 4px 4px 10px;
+}
+section.container ul.item-scroll li.item a span img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+section.container ul.item-scroll li.item div.item-child {
+    z-index: 999;
+    width: 940px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 200px;
+    display: none;
+    top: 0;
+    background-color: white;
+    border-left: 10px solid #F5F5F5;
+}
+section.container ul.item-scroll li.item div.item-child div a {
+    padding: 10px;
+}
+section.container ul.item-scroll li.item div.item-child div a.item-child-child {
+    color: black;
+    font-weight: normal;
+    font-size: 13px;
+    padding: 2px 0 0 10px;
+}
+section.container ul.item-scroll li.item div.item-child div a.item-child-child:hover {
+    color: #EA1C04;
+}
+section.container ul.item-scroll li.item:hover {
+    background-color: #EA1C04;
+}
+section.container ul.item-scroll li.item:hover a {
+    color: white;
+}
+
+section.container ul.item-scroll li.item:hover div.item-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.container ul.item-scroll li.item:hover div.item-child a {
+    color: #ea1c00;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/**/
+section#list_products {
+    background-color: #fff;
+}
+
+section#list_products div.container div.category_name {
+    position: relative;
+    margin: 20px 0;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+section#list_products div.container div.category_name a {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+/**/
+section#list_products div.container #list-items {
+    display: grid;
+    grid-template-columns: 248.4px 248.4px 248.4px 248.4px 248.4px;
+    grid-template-rows: 350px 350px;
+    grid-row-gap: 50px;
+    grid-column-gap: 22px;
+}
+section#list_products div.container #list-items .item {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    border: 1px solid #888;
+    box-shadow: 10px;
+}
+
+section#list_products div.container #list-items .item div.image-products {
+    width: 248px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+section#list_products div.container #list-items .item div.image-products img {
+    min-width: 228.4px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+section#list_products div.container #list-items .item div.image-products .mask div {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    background-color: rgba(121, 117, 101, 0.8);
+    width: 100%;
+    height: 50px;
+    transition: bottom 0.5s ease-in-out;
+    padding: 14px;
+    text-align: center;
+}
+section#list_products div.container #list-items .item div.image-products .mask div a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+section#list_products div.container #list-items .item div.image-products:hover .mask div {
+    bottom: 0;
+}
+
+section#list_products div.container #list-items .item div.info-products {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+section#list_products div.container #list-items .item div.info-products span.name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+section#list_products div.container #list-items .item div.info-products span.promotional-price {
+    color: #EA1C04;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section#list_products div.container #list-items .item div.info-products del {
+    color: #888;
+}
+
+section#list_products div.container #list-items .item div.info-products span.item-icon img.icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 6px;
+    right: 5px;
+}
